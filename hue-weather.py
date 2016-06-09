@@ -30,7 +30,7 @@ def get_color_for(weather):
         return colors.rgbToCIE1931(*RED)
 
 
-def get_weather_url(state, city, api_key):
+def get_weather_url(api_key, state, city):
     """ Constructs API URLs """
     url = furl()
     url.scheme = "https"

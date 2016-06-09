@@ -13,14 +13,17 @@ Changes the color of your Hue lights based on current weather conditions.
 ## Usage
 
 ```
-usage: hue-weather.py [-h] --state STATE --city CITY --bridge-ip BRIDGE_IP
-                      --light-names [LIGHT_NAMES [LIGHT_NAMES ...]]
-                      [--poll POLL] [--fork] [--log-filename LOG_FILENAME]
+usage: hue-weather.py [-h] --api-key API_KEY --state STATE --city CITY
+                      --bridge-ip BRIDGE_IP --light-names
+                      [LIGHT_NAMES [LIGHT_NAMES ...]] [--poll POLL] [--fork]
+                      [--log-filename LOG_FILENAME]
 
 Changes your Hue light(s) based on the weather
 
 optional arguments:
   -h, --help            show this help message and exit
+  --api-key API_KEY, -k API_KEY
+                        weather underground api key
   --state STATE, -s STATE
                         two letter postal code for your state
   --city CITY, -c CITY  the name of the city
